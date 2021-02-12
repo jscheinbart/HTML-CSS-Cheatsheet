@@ -3,7 +3,6 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
@@ -14,47 +13,82 @@
 ## General info
 This project uses HTML and CSS to create a static webpage containing a working table of contents comprised of hyperlinks, and tables of commonly used HTML and CSS language. I will be continually adding to this page as my knowledge on the subjects expands, as this page can be a reference point written in language I know how to understand.
 
-## Screenshots
-![alt text](https://github.com/jscheinbart/HTML-CSS-Cheatsheet/blob/main/Screenshot.png)
-
-
 ## Technologies
-* Built with Node.js
+* Coded in Visual Studio Code
+* HTML5
+* CSS
 
 ## Setup
 Installation instructions coming soon.
 
 ## Code Examples
-Initializing the different genres a user can input:
+An Example of a section including a table, that uses an id attribute for Table of Contents purposes. The ID attribute within the heading is a selector when styling.
+Using the `span` tag, I was able to properly style code snippets to appear differently when displayed.
 `
-let genres = [
-    "Pop",
-    "Rock",
-    "Country",
-    "Jazz",
-    "Techno",
-    "Classical",
-    "Metal",
-    "Funk",
-    "Hip Hop",
-    "Rap"
-];`
+<section id="tables">     
+    <h2 id="HTML Tables">HTML Tables</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;table&gt;</span></td>
+                <td>Table</td>
+                <td>Creates a blank table (No rows or columns)</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tr&gt;</span></td>
+                <td>Table Row</td>
+                <td>Creates a blank row</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;td&gt;</span></td>
+                <td>Table Data</td>
+                <td>This is where you write the content of a cell</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;thead&gt;</span></td>
+                <td>Table Head</td>
+                <td>Used to separate the head of the table from the rest</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;th&gt;</span></td>
+                <td>Table Head</td>
+                <td>Used within the <span class="code">&lt;thead&gt;</span> as column headers</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tbody&gt;</span></td>
+                <td>Table Body</td>
+                <td>Used to separate the body of the table from the head</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tfoot&gt;</span></td>
+                <td>Table Footer</td>
+                <td>Used to separate the footer of the table from the rest</td> 
+            </tr>
+        </tbody>
+    </table>`
 
 ## Features
 List of features ready and TODOs for future development
-* Suggests a random song based on the user's inputted genre
-* Calls the user a fun nick-name based on their favorite genre
-* Uses local date/time features to include added personalization
+* Contains information regarding basic HTML Tags, Semantic HTML, commonly used CSS elements, etc.
+* Styled to be visually appealing, making code snippits stand out
+* Uses Semantic HTML for accessibility purposes
 
 To-do list:
-* Continually add additional genres and song suggestions 
-* Allow a user to respond and cater suggestion based on user response
+* Continually add additional HTML and CSS concepts
+* Add examples of code usage to further term definitions
 
 ## Status
-Project is: _finished_
+Project is: _in progress_
 
 ## Inspiration
-In a _'boy can dream'_ kind of way, Spotify, Pandora, and my Discover Weekly. Extra thanks to the folks at Codecademy for helping me get to this point!
+This project was inspired by the studyguides I used to scrawl out in my notebook at Syracuse University. A much more organized, searchable document, will provide me even better support in my learning journey. Part of the Full-Stack Developer course at Codecademy. 
 
 ## Contact
 Created by [Jesse Scheinbart](https://www.linkedin.com/in/jesse-scheinbart/) - feel free to contact me!
