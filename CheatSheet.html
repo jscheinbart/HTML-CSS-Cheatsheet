@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML/CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+    <h1>Welcome to Jesse's HTML/CSS Cheat Sheet!</h1>
+    <section id="introduction">
+        <p>Welcome to Jesse's HTML and CSS Cheat Sheet. This sheet contains all of the concepts in HTML I have learned to date, and the creation of this page in and of itself used many of these practices. Excluding linking external media, like pictures, videos, and audio, this page was an exercize in styling, anchor links, and nailing down the basics!</p>
+    </section>
+    <section id="toc">
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#HTML Tables">HTML Tables</a></li>
+        <li><a href="#HTML Table Attributes">HTML Table Attributes</a></li>
+        <li><a href="#Common HTML Tags">Common HTML Tags</a></li>
+        <li><a href="#Semantic HTML Tags">Semantic HTML Tags</a></li>
+        <li><a href="#HTML Attributes">HTML Attributes</a></li>
+        <li><a href="#CSS Basics">CSS Basics</a></li>
+    </ul>
+    </section>
+    <section id="tables">     
+    <h2 id="HTML Tables">HTML Tables</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;table&gt;</span></td>
+                <td>Table</td>
+                <td>Creates a blank table (No rows or columns)</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tr&gt;</span></td>
+                <td>Table Row</td>
+                <td>Creates a blank row</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;td&gt;</span></td>
+                <td>Table Data</td>
+                <td>This is where you write the content of a cell</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;thead&gt;</span></td>
+                <td>Table Head</td>
+                <td>Used to separate the head of the table from the rest</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;th&gt;</span></td>
+                <td>Table Head</td>
+                <td>Used within the <span class="code">&lt;thead&gt;</span> as column headers</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tbody&gt;</span></td>
+                <td>Table Body</td>
+                <td>Used to separate the body of the table from the head</td> 
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tfoot&gt;</span></td>
+                <td>Table Footer</td>
+                <td>Used to separate the footer of the table from the rest</td> 
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="HTML Table Attributes">HTML Table Attributes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Name</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;colspan&gt;</span></td>
+                <td>Column Span</td>
+                <td>Defines how many columns a <span class="code">&lt;td&gt;</span> element should span</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;rowspan&gt;</span></td>
+                <td>Row Span</td>
+                <td>Defines how many rows a <span class="code">&lt;td&gt;</span>  element should span</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="Common HTML Tags">Common HTML Tags</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Name</th>
+                <th>Definition</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="code">&lt;!DOCTYPE html&gt;</span></td>
+            <td>Doctype</td>
+            <td>Lets the browser know that it should interpret the code as HTML</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;div&gt;</span></td>
+            <td>Division</td>
+            <td>Acts as another container for additional elements (not-semantically)</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;p&gt;</span></td>
+            <td>Paragraph</td>
+            <td>The place to put more text</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;head&gt;</span></td>
+            <td>Head</td>
+            <td>Used to contain all of the head (title, style, meta, etc.)</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;title&gt;</span></td>
+            <td>title</td>
+            <td>Sets the browser's title (in the tab)</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;link&gt;</span></td>
+            <td>link/td>
+            <td>Defines the relationship between the current document and an external source</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;style&gt;</span></td>
+            <td>Style</td>
+            <td>Used to write CSS code in the HTML (Not commonly used/suggested)</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;span&gt;</span></td>
+            <td>Span</td>
+            <td>An inline HTML container used to assign the class attribute for styling purposes</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;h1&gt;</span></td>
+            <td>Heading</td>
+            <td>Can use <span class="code">&lt;h1&gt;</span>through<span class="code">&lt;h6&gt;</span>as headings in a page</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;em&gt;</span></td>
+            <td>Emphasized text</td>
+            <td>Used semantically inline for screen readers and styling</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;b&gt;</span></td>
+            <td>Bold</td>
+            <td>Styles text as bold and for screen readers</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;i&gt;</span></td>
+            <td>Italic</td>
+            <td>Styles text as italic and for screen readers</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;u&gt;</span></td>
+            <td>Underline</td>
+            <td>Styles text as underlined and for screen readers</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;a&gt;</span></td>
+            <td>Anchor</td>
+            <td>Used to link one page to another</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;ol&gt;</span></td>
+            <td>Ordered List</td>
+            <td>Creates a numbered list</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;ul&gt;</span></td>
+            <td>Unordered List</td>
+            <td>Creates a bulleted list</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;li&gt;</span></td>
+            <td>List Item</td>
+            <td>Used inside the Un/Ordered list to write items</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;!--Statement --&gt;</span></td>
+            <td>Notes?</td>
+            <td>Used to leave notes in HTML code</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;br&gt;</span></td>
+            <td>Break</td>
+            <td>Used inline in a paragraph to create a line break</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;img&gt;</span></td>
+            <td>Image</td>
+            <td>Used to include an image (self-closing)</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;video&gt;</span></td>
+            <td>Video</td>
+            <td>Must specify source, and controls attribute</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;audio&gt;</span></td>
+            <td>Audio</td>
+            <td>Must specify source, controls attribute</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;embed&gt;</span></td>
+            <td>Embed</td>
+            <td>Self-closing tag to implement any type of media</td>
+        </tr>
+    </tbody>
+    </table>
+    <h2 id="Semantic HTML Tags">Semantic HTML Tags</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Definition</th>
+            </tr>
+    </thead>
+        <tr>
+            <td><span class="code">&lt;header&gt;</span></td>
+            <td>Specifies a header for a document or section</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;nav&gt;</span></td>
+            <td>Defines navigation links</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;section&gt;</span></td>
+            <td>Defines a section <b>in</b> a document</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;article&gt;</span></td>
+            <td>Defines independent, self-contained content</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;aside&gt;</span></td>
+            <td>Defines condent aside from the page content</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;footer&gt;</span></td>
+            <td>Defines a footer for a document or section</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;figure&gt;</span></td>
+            <td>Specifies self contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;figcaption&gt;</span></td>
+            <td>Defines a caption for <span class="code">&lt;figure&gt;</span> element</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;details&gt;</span></td>
+            <td>Defines additional details that the user can view or hide</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;main&gt;</span></td>
+            <td>Specifies the main content of a document</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;mark&gt;</span></td>
+            <td>Defines marked/highlighted text</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;summary&gt;</span></td>
+            <td>Defines a visible heading for a <span class="code">&lt;details&gt;</span>element</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;time&gt;</span></td>
+            <td>Defines a date/time</td>
+        </tr>
+    </table>
+    <h2 id="HTML Attributes">HTML Attributes</h2>
+    <table>
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Definition</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="code">&lt;href&gt;</span></td>
+            <td>Hyperlink Reference</td>
+            <td>Used with an <span class="code">&lt;a&gt;</span>tag and specifies the URL of the page the link goes to</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;src&gt;</span></td>
+            <td>Source</td>
+            <td>Used with an <span class="code">&lt;img&gt;</span>tag to embed an image</td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="code">&lt;width&gt;</span></td>
+            <td>Defines the width of an image (in pixels)</td>
+        </tr>
+        <tr>
+            <td colspan="2"><span class="code">&lt;height&gt;</span></td>
+            <td>Defines the height of an image (in pixels)</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;alt&gt;</span></td>
+            <td>Alternative</td>
+            <td>Defines alternate text for an image, if the image cannot be displayed</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;lang&gt;</span></td>
+            <td>Language</td>
+            <td>Used inside<span class="code">&lt;html&gt;</span>tag to declare language of Web page</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;title&gt;</span></td>
+            <td>Title</td>
+            <td>Defines extra information about an element</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;id&gt;</span></td>
+            <td>ID</td>
+            <td>Specifies a unique ID for an HTML element (must be unique within the HTML document</td>
+        </tr>
+        <tr>
+            <td><span class="code">&lt;target&gt;</span></td>
+            <td>Target</td>
+            <td>Used in an anchor tag to specify where a hyperlink opens. A value of<span class="code">&lt;"_blank"&gt;</span> opens the in a new tab</td>
+        </tr> 
+        <tr>
+            <td><span class="code">&lt;#&gt;</span></td>
+            <td>Link to a Different Part of the Page</td>
+            <td>Used within an anchor tag to create hyperlinks to a different part of the same page</td>
+        </tr> 
+    </tbody>
+    </table>
+    <h2 id="CSS Basics">CSS Basics</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Definition</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Class Selector</td>
+                <td>Denoted with a<span class="code">.</span> and followed by the class name</td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td>Denoted with a<span class="code">#</span> and followed by the id name</td>
+            </tr>
+            <tr>
+                <td><span class="code">!important</span></td>
+                <td>Overrides any other declarations and ignores other specificity. (Don't use it, its bad practice)</td>
+            </tr>
+            <tr>
+                <td>Type Selectors</td>
+                <td>Used to match all elements of a given type or tag name</td>
+            </tr>
+            <tr>
+                <td colspan="2"id="mid-table heading">CSS Declarations</td>
+            </tr>
+            <tr>
+                <td><span class="code">font-size</span></td>
+                <td>Sets text size, many different units or types, such as px</td>
+            </tr>
+            <tr>
+                <td><span class="code">background-color</span></td>
+                <td>Contorls background color of elements</td>
+            </tr>
+            <tr>
+                <td><span class="code">opacity</span></td>
+                <td>Can be used to control transparency, ranges from 0-1</td>
+            </tr>
+            <tr>
+                <td><span class="code">font-weight</span></td>
+                <td>Contorls boldness of text, can be keyword such as <span class="code">bold </span>or <span class="code">normal</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">text-align</span></td>
+                <td>Sets text alignment of inline contents</td>
+            </tr>
+            <tr>
+                <td><span class="code">color</span></td>
+                <td>Sets the color for an element</td>
+            </tr>
+            <tr>
+                <td><span class="code">font-family</span></td>
+                <td>Sets the typeface, wrap in quotes</td>
+            </tr>
+            <tr>
+                <td><span class="code">background-image</span></td>
+                <td>Sets the background image, should be a url in this syntax:<span class="code">url("nyan-cat.gif")</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">border</span></td>
+                <td>Sets the border (for a table)</td>
+            </tr>
+            <tr>
+                <td><span class="code">border-collapse</span></td>
+                <td>Set to collapse to get rid of the spaces between table elements</td>
+            </tr>
+            <tr>
+                <td><span class="code">padding</span></td>
+                <td>Sets the padding around table data</td>
+            </tr>
+    </table>
+    </section> 
+    <footer>
+        <p><a href="#toc">Take me back to the top!</a></p>
+    </footer>
+</body>
+
+
+
+
+
+

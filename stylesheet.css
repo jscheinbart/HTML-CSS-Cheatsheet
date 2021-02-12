@@ -1,0 +1,37 @@
+body {
+    font-family: Apercu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #484848;
+    background-color: #adb7bd;
+}
+.code{
+    font-family: 'Courier New', Courier, monospace;
+    color: #484848;
+    background-color: white;
+}
+h1{
+    color: #092d63; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 54px; 
+    font-weight: 300; 
+    line-height: 58px; 
+    margin: 0 0 58px; 
+}
+table, th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th {
+    background-color:#fe921f;
+    color: #092d63; 
+    font-size: larger;
+}
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+h2 {
+    text-align: center;
+}
