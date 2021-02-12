@@ -15,7 +15,8 @@
 This project uses HTML and CSS to create a static webpage containing a working table of contents comprised of hyperlinks, and tables of commonly used HTML and CSS language. I will be continually adding to this page as my knowledge on the subjects expands, as this page can be a reference point written in language I know how to understand.
 
 ## Screenshots
-![alt text](https://github.com/jscheinbart/Mixed-Messages/blob/main/Screenshot.png)
+![alt text](https://github.com/jscheinbart/HTML-CSS-Cheatsheet/blob/main/Screenshot.png)
+
 
 ## Technologies
 * Built with Node.js
