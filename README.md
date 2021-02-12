@@ -24,7 +24,7 @@ Installation instructions coming soon.
 ## Code Examples
 An Example of a section including a table, that uses an id attribute for Table of Contents purposes. The ID attribute within the heading is a selector when styling.
 Using the `span` tag, I was able to properly style code snippets to appear differently when displayed.
-`
+```html
 <section id="tables">     
     <h2 id="HTML Tables">HTML Tables</h2>
     <table>
@@ -72,8 +72,8 @@ Using the `span` tag, I was able to properly style code snippets to appear diffe
                 <td>Used to separate the footer of the table from the rest</td> 
             </tr>
         </tbody>
-    </table>`
-
+    </table>
+```
 ## Features
 List of features ready and TODOs for future development
 * Contains information regarding basic HTML Tags, Semantic HTML, commonly used CSS elements, etc.
